@@ -6,7 +6,7 @@ const next = document.querySelector('#next');
 let recipesArray = [];
 let page = 1;
 let pages = [];
-let pageSize = 3;
+let pageSize = 4;
 let totalDataCount = 0;
 let totalPageCount = 0;
 
