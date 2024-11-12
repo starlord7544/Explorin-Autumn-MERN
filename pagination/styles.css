@@ -78,13 +78,18 @@ main {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 20px;
-    max-width: 1200px; 
+    /* max-width: 100px;  */
     margin: 0 auto;
+    height: 90%;
     width: 100dvw;
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 
 .card {
-    width: 280px;
+    width: 320px;
+    height: 100%;
+    overflow-y: scroll;
     border: 2px solid #eaeaea;
     border-radius: 8px;
     padding: 12px;
@@ -93,7 +98,13 @@ main {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 10px;
     transition: transform 0.2s, box-shadow 0.2s;
+    scrollbar-width: none;
+}
+
+.card::-webkit-scrollbar, .content::-webkit-scrollbar {
+    display: none;
 }
 
 .card:hover {
@@ -130,5 +141,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 5px;
-    padding-bottom: 30px;
+    position: absolute;
+    bottom: 20px;
+    /* padding-bottom: 30px; */
 }
