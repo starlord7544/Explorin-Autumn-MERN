@@ -112,7 +112,7 @@ main {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.card img.card-image {
+.card-image {
     width: 100%;
     height: auto;
     border-radius: 5px;
@@ -143,5 +143,31 @@ main {
     gap: 5px;
     position: absolute;
     bottom: 20px;
-    /* padding-bottom: 30px; */
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        height: 100px;
+        width: 95%;
+        display: flex;
+    }
+
+    
+    .card p, .card h2{
+        transform: translateX(100px);
+        max-width: calc(100% - 100px);
+    }
+
+    .card p{
+        font-size: 0.9rem;
+    }
+    
+    .card h2 {
+        text-align: start;
+    }
+
+    .card-image {
+        width: 75px;
+        position: absolute;
+    }
 }
