@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
@@ -20,7 +20,8 @@ main {
     height: 100dvh;
 }
 
-.container, .btn {
+.container,
+.btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,7 +104,8 @@ main {
     scrollbar-width: none;
 }
 
-.card::-webkit-scrollbar, .content::-webkit-scrollbar {
+.card::-webkit-scrollbar,
+.content::-webkit-scrollbar {
     display: none;
 }
 
@@ -152,16 +154,20 @@ main {
         display: flex;
     }
 
-    
-    .card p, .card h2{
+    .card:hover {
+        transform: translateY(0px);
+    }
+
+    .card p,
+    .card h2 {
         transform: translateX(100px);
         max-width: calc(100% - 100px);
     }
 
-    .card p{
+    .card p {
         font-size: 0.9rem;
     }
-    
+
     .card h2 {
         text-align: start;
     }
